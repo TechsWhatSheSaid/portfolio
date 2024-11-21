@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images\backgroundimage.jpg'); /* Path to your background image */
+    background-image: url('.github/workflows/images/backgroundimage.jpg'); /* Path to your background image */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the background stays fixed on scroll */
