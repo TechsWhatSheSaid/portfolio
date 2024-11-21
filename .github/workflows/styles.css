@@ -3,10 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the background stays fixed on scroll */
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for better readability */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -29,6 +33,9 @@ nav a {
 
 main {
     padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make text readable */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 section {
@@ -36,8 +43,9 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
     color: white;
     text-align: center;
     padding: 1em 0;
+    border-top: 1px solid #fff; /* Slight border at the top for separation */
 }
