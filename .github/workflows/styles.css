@@ -27,6 +27,7 @@ header {
     margin: 0;
     font-size: 1.5em;
     margin-right: 20px; /* Add space between the heading and the nav */
+    color: #FFD700; /* Change color to gold or any other standout color */
 }
 
 nav ul {
@@ -54,6 +55,11 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust spacing between nav and main content */
+header + main {
+    margin-top: 20px; /* Add more space between nav and main content */
 }
 
 /* Other existing styles */
