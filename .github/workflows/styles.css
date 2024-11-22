@@ -20,23 +20,37 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Center-align the nav items */
 }
 
 nav li {
-    display: inline;
+    display: inline-block; /* Display list items as inline-block for button look */
     margin: 0 1em;
 }
 
 nav a {
     color: black; /* Set link color to black */
     text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding for button look */
+    background-color: rgba(255, 255, 255, 0.8); /* Button background color */
+    border-radius: 5px; /* Rounded corners for buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 1); /* Darker background on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 main {
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make text readable */
-    border-radius: 8px;
+    border-radius: 15px; /* More rounded corners for the main content */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center the main content with margin auto */
+    width: 80%; /* Limit the width for better readability */
+    max-width: 1200px; /* Set a maximum width */
 }
 
 section {
@@ -65,12 +79,12 @@ ul li a i:hover {
 .content-wrapper {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between; /* Distribute space between items evenly */
+    justify-content: flex-start; /* Align items to the start to reduce space between image and text */
 }
 
 .left-photo {
     max-width: 200px; /* Adjust the size as needed */
-    margin-right: 10px; /* Reduce space between the image and text */
+    margin-right: 20px; /* Space between the image and text */
 }
 
 .text-content {
@@ -85,7 +99,7 @@ ul li a i:hover {
     text-align: center; /* Center the text */
     width: 60%; /* Set the width of the box */
     margin-left: auto; /* Align the box to the right */
-    margin-top: 0; /* Reduce top margin for better alignment */
+    margin-top: 20px; /* Adjust top margin for better alignment */
 }
 
 /* Title Styles */
