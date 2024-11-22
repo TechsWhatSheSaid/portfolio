@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images/backgroundimage.jpg'); /* Ensure this path is correct */
+    background-image: url('images/backgroundimage.jpg'); /* Correct path to your background image */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the background stays fixed on scroll */
@@ -74,6 +74,13 @@ ul li a i:hover {
 
 .text-content {
     flex: 1; /* Take up remaining space */
+}
+
+.about-me {
+    background-color: rgba(240, 240, 240, 0.9); /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Title Styles */
