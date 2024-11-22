@@ -78,8 +78,7 @@ ul li a i:hover {
 
 .content-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; /* Align items to the start to reduce space between image and text */
+    align-items: flex-start; /* Align items to the top */
     gap: 20px; /* Add space between image and about-me section */
 }
 
@@ -95,10 +94,11 @@ ul li a i:hover {
     background-color: rgba(240, 240, 240, 0.9); /* Light grey background */
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
     text-align: center; /* Center the text */
     width: 60%; /* Set the width of the box */
     margin-top: 0; /* Reduce top margin for better alignment */
+    align-self: flex-start; /* Align the about-me section to the top */
 }
 
 /* Title Styles */
