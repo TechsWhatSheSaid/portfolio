@@ -81,6 +81,9 @@ ul li a i:hover {
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+    width: 60%; /* Set the width of the box */
+    margin-left: auto; /* Align the box to the right */
 }
 
 /* Title Styles */
