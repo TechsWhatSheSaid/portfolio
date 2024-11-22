@@ -14,43 +14,58 @@ header {
     background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for better readability */
     color: white;
     padding: 1em 0;
-    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 0 20px;
+}
+
+.site-heading {
+    margin: 0;
+    font-size: 1.5em;
+    margin-right: 20px; /* Add space between the heading and the nav */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center-align the nav items */
+    display: flex;
+    gap: 1em;
 }
 
 nav li {
-    display: inline-block; /* Display list items as inline-block for button look */
-    margin: 0 1em;
+    display: inline-block;
+    margin: 0;
 }
 
 nav a {
-    color: black; /* Set link color to black */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Add padding for button look */
-    background-color: rgba(255, 255, 255, 0.8); /* Button background color */
-    border-radius: 15px; /* More rounded corners for buttons */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 1); /* Darker background on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* Other existing styles */
 
 main {
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make text readable */
-    border-radius: 15px; /* More rounded corners for the main content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 20px auto; /* Center the main content with margin auto */
-    width: 80%; /* Limit the width for better readability */
-    max-width: 1200px; /* Set a maximum width */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
 }
 
 section {
@@ -58,63 +73,51 @@ section {
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
     padding: 1em 0;
-    border-top: 1px solid #fff; /* Slight border at the top for separation */
-}
-
-/* Icons styling */
-ul li a i {
-    font-size: 1.5em; /* Adjust the size of the icons */
-    color: #007acc; /* Set the color of the icons */
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-ul li a i:hover {
-    color: #005f99; /* Change color on hover */
+    border-top: 1px solid #fff;
 }
 
 .content-wrapper {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align the items */
+    flex-direction: column;
+    align-items: center;
 }
 
 .left-photo {
-    max-width: 200px; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space between the image and about-me section */
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .text-content {
-    width: 100%; /* Take up the full width */
-    text-align: center; /* Center-align the content */
+    width: 100%;
+    text-align: center;
 }
 
 .about-me {
-    background-color: rgba(240, 240, 240, 0.9); /* Light grey background */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
-    text-align: center; /* Center the text */
-    width: calc(100% - 40px); /* Adjust width to center the box */
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 20px; /* Space between heading and the section */
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-/* Title Styles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif; /* Use a different font for titles */
-    color: black; /* Set title color to black */
+    font-family: 'Georgia', serif;
+    color: black;
     margin-bottom: 0.5em;
-    text-align: center; /* Center-align titles */
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5em;
-    border-bottom: none; /* Remove underline */
-    padding-bottom: 0.2em; /* Adjust padding if needed */
+    border-bottom: none;
+    padding-bottom: 0.2em;
 }
 
 h2 {
