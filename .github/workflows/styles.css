@@ -27,7 +27,7 @@ header {
     margin: 0;
     font-size: 1.5em;
     margin-right: 20px; /* Add space between the heading and the nav */
-    color: #FFD700; /* Change color to gold or any other standout color */
+    color: #333333; /* Change color to gold or any other standout color */
 }
 
 nav ul {
