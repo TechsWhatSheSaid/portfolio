@@ -94,7 +94,7 @@ ul li a i:hover {
     background-color: rgba(240, 240, 240, 0.9); /* Light grey background */
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
     text-align: center; /* Center the text */
     width: 60%; /* Set the width of the box */
     margin-top: 0; /* Reduce top margin for better alignment */
