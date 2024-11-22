@@ -33,7 +33,7 @@ nav a {
     text-decoration: none; /* Remove underline from links */
     padding: 10px 20px; /* Add padding for button look */
     background-color: rgba(255, 255, 255, 0.8); /* Button background color */
-    border-radius: 5px; /* Rounded corners for buttons */
+    border-radius: 15px; /* More rounded corners for buttons */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
@@ -98,8 +98,9 @@ ul li a i:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center the text */
     width: 60%; /* Set the width of the box */
-    margin-left: auto; /* Align the box to the right */
-    margin-top: 20px; /* Adjust top margin for better alignment */
+    margin-left: 10px; /* Align the box to the right */
+    margin-top: 0; /* Reduce top margin for better alignment */
+    align-self: flex-start; /* Align the about-me section to the top */
 }
 
 /* Title Styles */
