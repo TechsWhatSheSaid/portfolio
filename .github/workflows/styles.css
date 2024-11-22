@@ -1,12 +1,14 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images/background.jpg'); /* Path to your background image */
+    background-image: url('images/background.jpg'); /* Ensure this path is correct */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the background stays fixed on scroll */
+    color: black; /* Set default font color to black */
 }
 
 header {
@@ -27,8 +29,8 @@ nav li {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline from links */
 }
 
 main {
@@ -67,24 +69,21 @@ footer {
 /* Title Styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif; /* Use a different font for titles */
-    color: #333;
+    color: black; /* Set title color to black */
     margin-bottom: 0.5em;
     text-align: center; /* Center-align titles */
 }
 
 h1 {
     font-size: 2.5em;
-    color: #007acc; /* Blue color for the main title */
-    border-bottom: 2px solid #007acc; /* Add an underline */
-    padding-bottom: 0.2em; /* Add some space below the underline */
+    border-bottom: none; /* Remove underline */
+    padding-bottom: 0.2em; /* Adjust padding if needed */
 }
 
 h2 {
     font-size: 2em;
-    color: #005f99; /* Slightly darker blue for subtitles */
 }
 
 h3 {
     font-size: 1.75em;
-    color: #004d80; /* Even darker blue for smaller headings */
 }
