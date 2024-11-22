@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images/background.jpg'); /* Correct path to your background image */
+    background-image: url('images/background.jpg'); /* Ensure this path is correct */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the background stays fixed on scroll */
@@ -28,8 +28,8 @@ nav li {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline from links */
 }
 
 main {
@@ -62,35 +62,38 @@ ul li a i:hover {
     color: #005f99; /* Change color on hover */
 }
 
-.content-wrapper { 
-    display: flex; align-items: flex-start; 
-} 
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
 
-.left-photo { 
+.left-photo {
     max-width: 200px; /* Adjust the size as needed */
-    margin-right: 20px; /* Space between the image and text */ 
-} 
+    margin-right: 20px; /* Space between the image and text */
+}
 
-.text-content { 
+.text-content {
     flex: 1; /* Take up remaining space */
 }
 
-/* Title Styles */ h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Georgia', serif; /* Use a different font for titles */ 
-    color: black; /* Set title color to black */ 
-    margin-bottom: 0.5em; text-align: center; /* Center-align titles */ 
-} 
+/* Title Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Use a different font for titles */
+    color: black; /* Set title color to black */
+    margin-bottom: 0.5em;
+    text-align: center; /* Center-align titles */
+}
 
-h1 { 
-    font-size: 2.5em; 
-    border-bottom: none; /* Remove underline */ 
-    padding-bottom: 0.2em; /* Adjust padding if needed */ 
-} 
+h1 {
+    font-size: 2.5em;
+    border-bottom: none; /* Remove underline */
+    padding-bottom: 0.2em; /* Adjust padding if needed */
+}
 
-h2 { 
-    font-size: 2em; 
-} 
+h2 {
+    font-size: 2em;
+}
 
-h3 { 
-    font-size: 1.75em; 
+h3 {
+    font-size: 1.75em;
 }
