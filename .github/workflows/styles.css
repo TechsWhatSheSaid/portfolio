@@ -98,7 +98,8 @@ ul li a i:hover {
     padding: 20px; /* Padding inside the box */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
     text-align: center; /* Center the text */
-    width: 100%; /* Set the width of the box */
+    width: calc(100% - 40px); /* Adjust width to center the box */
+    margin: 0 auto; /* Center the box horizontally */
     margin-top: 20px; /* Space between heading and the section */
 }
 
