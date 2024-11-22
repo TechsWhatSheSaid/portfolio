@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('images/backgroundimage.jpg'); /* Path to your background image */
+    background-image: url('images/background.jpg'); /* Path to your background image */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the background stays fixed on scroll */
@@ -50,12 +50,41 @@ footer {
     border-top: 1px solid #fff; /* Slight border at the top for separation */
 }
 
-ul li a i {
-    font-size: 1.5em; /* Adjust the size of the icons */
-    color: #007acc; /* Set the color of the icons */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
 }
 
-ul li a i:hover {
-    color: #005f99; /* Change color on hover */
+.left-photo {
+    max-width: 200px; /* Adjust the size as needed */
+    margin-right: 20px; /* Space between the image and text */
+}
+
+.text-content {
+    flex: 1; /* Take up remaining space */
+}
+
+/* Title Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Use a different font for titles */
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center; /* Center-align titles */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007acc; /* Blue color for the main title */
+    border-bottom: 2px solid #007acc; /* Add an underline */
+    padding-bottom: 0.2em; /* Add some space below the underline */
+}
+
+h2 {
+    font-size: 2em;
+    color: #005f99; /* Slightly darker blue for subtitles */
+}
+
+h3 {
+    font-size: 1.75em;
+    color: #004d80; /* Even darker blue for smaller headings */
 }
