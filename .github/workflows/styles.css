@@ -49,3 +49,13 @@ footer {
     padding: 1em 0;
     border-top: 1px solid #fff; /* Slight border at the top for separation */
 }
+
+ul li a i {
+    font-size: 1.5em; /* Adjust the size of the icons */
+    color: #007acc; /* Set the color of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+ul li a i:hover {
+    color: #005f99; /* Change color on hover */
+}
