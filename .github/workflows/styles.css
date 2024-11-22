@@ -96,7 +96,7 @@ ul li a i:hover {
     padding: 20px; /* Padding inside the box */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow to the right */
     text-align: center; /* Center the text */
-    width: 60%; /* Set the width of the box */
+    width: calc(100% - 220px); /* Adjust width based on the size of the image and gap */
     margin-top: 0; /* Reduce top margin for better alignment */
     align-self: flex-start; /* Align the about-me section to the top */
 }
