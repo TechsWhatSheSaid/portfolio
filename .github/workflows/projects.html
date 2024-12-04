@@ -1,43 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <a href="index.html" class="site-heading-link">
-                <h1 class="site-heading">Oliver Roy's Portfolio</h1>
-               </a>
-            <nav>
+<header>
+    <div class="header-content">
+        <a href="index.html" class="site-heading-link">
+            <h1 class="site-heading">Oliver Roy's Portfolio</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <h1>Projects</h1>
+    <p>Here are some of the projects I’ve worked on:</p>
+    <ul>
+        <li>
+            <a href="http://oliverswebappvmproject.eastus.cloudapp.azure.com/" target="_blank">
+                Web Application Deployment to Azure VM
+            </a>
+            <p>
+                <strong>Project Overview:</strong>
+                Successfully deployed a web application to an Azure Virtual Machine, demonstrating a comprehensive understanding of server management, file transfer protocols, and web server configuration.
+            </p>
+            <p>
+                <strong>Technical Skills Demonstrated:</strong>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>SSH and SCP/SFTP: Used SSH for secure remote access and SCP/SFTP for file transfers.</li>
+                    <li>Apache Configuration: Configured Apache web server to serve web application files, including setting up virtual hosts and directory permissions.</li>
+                    <li>Troubleshooting: Diagnosed and resolved issues related to file permissions, directory structures, and server settings.</li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h1>Projects</h1>
-        <p>Here are some of the projects I’ve worked on:</p>
-        <ul>
-            <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a> - Brief description of what this project is about.</li>
-            <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a> - Brief description of what this project is about.</li>
-            <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3</a> - Brief description of what this project is about.</li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Oliver Roy. All rights reserved.</p>
-        <div class="contact-info">
-            <a href="mailto:oliver20032@yahoo.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/oliverlroy" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
-</body>
-</html>
+            </p>
+            <p>
+                <strong>Steps Taken:</strong>
+                <ol>
+                    <li>Server Setup: Configured an Azure VM to host the web application. Set up SSH for secure remote access.</li>
+                    <li>File Transfer: Utilized SCP and SFTP to transfer application files from local machine to the Azure VM. Ensured correct directory structure and file permissions.</li>
+                    <li>Web Server Configuration: Configured Apache to serve the web application. Edited Apache’s configuration files to set the document root and directory permissions. Addressed and resolved configuration errors, ensuring the server correctly served `index.html` and other necessary files.</li>
+                    <li>Problem-Solving: Identified and corrected issues causing the "Permission denied" and "connection to unknown port -1" errors. Adjusted firewall settings and network configurations to ensure stable and secure connections. Ensured images and other assets were properly displayed by verifying file paths and permissions.</li>
+                </ol>
+            </p>
+            <p>
+                <strong>Outcome:</strong>
+                Successfully deployed the web application, showcasing technical proficiency in server management, secure file transfer, and web server configuration. Overcame multiple challenges, demonstrating strong problem-solving skills and attention to detail.
+            </p>
+        </li>
+        <li>
+            <a href="https://github.com/yourusername/project2" target="_blank">Project 2</a> - Brief description of what this project is about.
+        </li>
+        <li>
+            <a href="https://github.com/yourusername/project3" target="_blank">Project 3</a> - Brief description of what this project is about.
+        </li>
+    </ul>
+</main>
+<footer>
+    <p>&copy; 2024 Oliver Roy. All rights reserved.</p>
+    <div class="contact-info">
+        <a href="mailto:oliver20032@yahoo.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/oliverlroy" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
