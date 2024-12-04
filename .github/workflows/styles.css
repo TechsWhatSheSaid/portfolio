@@ -67,6 +67,50 @@ header + main {
     margin-top: 20px; /* Add more space between nav and main content */
 }
 
+/* Main Content */
+main {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+main h1, main p {
+    text-align: center;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main ul li a {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+main ul li a:hover {
+    color: #0056b3;
+}
+
+main ul li p {
+    margin: 0.5em 0;
+}
+
 /* Footer styles */
 footer {
     background-color: rgba(51, 51, 51, 0.8);
@@ -92,18 +136,7 @@ footer {
     margin-right: 5px;
 }
 
-/* Other existing styles */
-
-main {
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 80%;
-    max-width: 1200px;
-}
-
+/* Section Styling */
 section {
     margin-bottom: 2em;
 }
