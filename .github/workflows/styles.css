@@ -1,75 +1,157 @@
-/* Header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/backgroundimage.jpg'); /* Ensure this path is correct */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the background stays fixed on scroll */
+    color: black;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 1em 0;
+}
+
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 0 20px;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
+.site-heading-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from the parent element */
 }
 
-header nav ul {
+.site-heading {
+    margin: 0;
+    font-size: 1.5em;
+    margin-right: 20px; /* Add space between the heading and the nav */
+    color: #000000; /* Change color to dark smoke gray */
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
-    gap: 1rem;
-    padding: 0;
+    gap: 1em;
 }
 
-header nav ul li a {
-    color: #fff;
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    color: black;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #ddd;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Main Content */
-main {
-    padding: 2rem;
+/* Adjust spacing between nav and main content */
+header + main {
+    margin-top: 20px; /* Add more space between nav and main content */
 }
 
-main ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-main ul li {
-    background-color: #fff;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-main ul li a {
-    font-weight: bold;
-    color: #007BFF;
-}
-
-main ul li a:hover {
-    color: #0056b3;
-}
-
-/* Footer */
+/* Footer styles */
 footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 1em 0;
+    border-top: 1px solid #fff;
 }
 
-footer .contact-info a {
-    margin: 0 0.5rem;
-    color: #fff;
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contact-info a {
+    color: white; /* Ensure icons and links are white */
     text-decoration: none;
+    margin: 0 10px;
 }
 
-footer .contact-info a:hover {
-    color: #ddd;
+.contact-info a i {
+    margin-right: 5px;
+}
+
+/* Other existing styles */
+
+main {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-photo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    width: 100%;
+    text-align: center;
+}
+
+.about-me {
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    color: black;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: none;
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
 }
