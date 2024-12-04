@@ -32,7 +32,6 @@ header {
     margin: 0;
     font-size: 1.5em;
     margin-right: 20px; /* Add space between the heading and the nav */
-    color: #000000; /* Change color to dark smoke gray */
 }
 
 nav ul {
@@ -40,6 +39,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 1em;
+    margin: 0; /* Remove default margin */
 }
 
 nav li {
@@ -113,6 +113,7 @@ main ul li p {
 
 main ul li ul, main ul li ol {
     padding-left: 1.5em; /* Indent nested lists */
+    list-style-type: disc;
 }
 
 /* Footer styles */
