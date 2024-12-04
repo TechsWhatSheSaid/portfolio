@@ -58,7 +58,66 @@
                 </p>
             </li>
             <li>
-                <a href="https://github.com/yourusername/project2" target="_blank">Project 2</a> - Brief description of what this project is about.
+                <a href="https://github.com/techswhatshesaid/ARM Templates/azuredeploy.json" target="_blank">
+                    Azure Resource Manager (ARM) Template for Virtual Machine Deployment
+                </a>
+                <p>
+                    <strong>Project Overview:</strong>
+                    This project involves creating an ARM template to automate the deployment of an Azure Virtual Machine (VM) along with essential networking components. The template defines resources such as a public IP address, a virtual network, a network interface, and the VM itself.
+                </p>
+                <p>
+                    <strong>Purpose:</strong>
+                    The ARM template is designed to streamline the deployment process, ensuring consistency and efficiency when setting up a VM environment in Azure. This approach highlights the benefits of Infrastructure as Code (IaC), including repeatability, version control, and reduced manual configuration errors.
+                </p>
+                <p>
+                    <strong>Components Created:</strong>
+                    <ul>
+                        <li><strong>Public IP Address</strong>
+                            <br>Type: `Microsoft.Network/publicIPAddresses`
+                            <br>Purpose: Provides a dynamic public IP address for the VM.
+                        </li>
+                        <li><strong>Virtual Network</strong>
+                            <br>Type: `Microsoft.Network/virtualNetworks`
+                            <br>Purpose: Creates a virtual network with a specified address space and subnet.
+                        </li>
+                        <li><strong>Network Interface</strong>
+                            <br>Type: `Microsoft.Network/networkInterfaces`
+                            <br>Purpose: Connects the VM to the virtual network and associates it with the public IP address.
+                        </li>
+                        <li><strong>Virtual Machine</strong>
+                            <br>Type: `Microsoft.Compute/virtualMachines`
+                            <br>Purpose: Deploys an Ubuntu VM with specified hardware and software configurations.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Technical Skills Demonstrated:</strong>
+                    <ul>
+                        <li>Infrastructure as Code (IaC): Utilized ARM templates to define and automate infrastructure deployment.</li>
+                        <li>Azure Resource Management: Managed Azure resources, including networking and compute, through declarative templates.</li>
+                        <li>Networking Configuration: Set up virtual networks, subnets, and network interfaces to ensure proper VM connectivity.</li>
+                        <li>Security: Configured secure admin access using parameterized credentials.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Template Parameters:</strong>
+                    <ul>
+                        <li>location: The Azure region where resources will be deployed.</li>
+                        <li>publicIpName: The name of the public IP address resource.</li>
+                        <li>virtualNetworkName: The name of the virtual network resource.</li>
+                        <li>addressPrefix: The address prefix for the virtual network.</li>
+                        <li>subnetName: The name of the subnet within the virtual network.</li>
+                        <li>subnetPrefix: The address prefix for the subnet.</li>
+                        <li>networkInterfaceName: The name of the network interface resource.</li>
+                        <li>vmName: The name of the virtual machine.</li>
+                        <li>adminUsername: The admin username for the VM.</li>
+                        <li>adminPassword: The secure admin password for the VM.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Outcome:</strong>
+                    By defining and deploying the infrastructure with an ARM template, the project ensures a reliable, repeatable, and efficient setup process. It demonstrates proficiency in cloud infrastructure management and the practical application of DevOps practices.
+                </p>
             </li>
             <li>
                 <a href="https://github.com/yourusername/project3" target="_blank">Project 3</a> - Brief description of what this project is about.
