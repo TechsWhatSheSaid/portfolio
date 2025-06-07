@@ -89,10 +89,60 @@
                     By defining and deploying the infrastructure with an ARM template, the project ensures a reliable, repeatable, and efficient setup process. It demonstrates proficiency in cloud infrastructure management and the practical application of DevOps practices.
                 </p>
             </li>
-<!--           <li>-->
-<!--                 <a href="https://github.com/yourusername/project3" target="_blank">Project 3</a> - Brief description of what this project is about.-->
-<!--           </li>-->
-<!--       </ul>--> 
+            <!-- New Project Entry -->
+            <li>
+                <a href="#" target="_blank">
+                    Flask Web App with Azure Blob Storage Integration
+                </a>
+                <p>
+                    <strong>Project Overview:</strong>
+                    I deployed a Flask web application to Azure that integrates with Azure Blob Storage. This solution transitioned a locally developed app into a fully hosted cloud service, utilizing continuous deployment with GitHub Actions.
+                </p>
+                <p>
+                    <strong>Purpose:</strong>
+                    The main goal was to build a web app that enables users to upload files, with those files then securely stored in Azure Blob Storage, demonstrating an end-to-end cloud upload solution.
+                </p>
+                <p>
+                    <strong>Components Created:</strong>
+                    <ul>
+                        <li>A Flask web application with an intuitive upload interface.</li>
+                        <li>A GitHub repository configured with GitHub Actions for continuous integration and deployment.</li>
+                        <li>An Azure App Service set up with a custom startup command to launch the Flask app.</li>
+                        <li>Integration with Azure Blob Storage to manage and store uploaded files securely.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Technical Skills Demonstrated:</strong>
+                    <ul>
+                        <li>Development with Flask and Python.</li>
+                        <li>Deployment and configuration on Azure App Service.</li>
+                        <li>CI/CD pipeline setup using GitHub Actions.</li>
+                        <li>Integration of cloud storage solutions using Azure Blob Storage.</li>
+                        <li>Troubleshooting and debugging for cloud-based applications.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Parameters:</strong>
+                </p>
+                <p>
+                    <strong>Startup Command (Sample):</strong>
+                </p>
+                <pre>gunicorn --bind 0.0.0.0:8000 Storage_project.uploaderUI:app</pre>
+                <p>
+                    This command directs Azure to use Gunicorn to serve the Flask application from the <em>Storage_project/uploaderUI.py</em> module, binding it to port <code>0.0.0.0:8000</code>.
+                </p>
+                <p>
+                    <strong>Environment Variable:</strong> Configured <code>AZURE_STORAGE_CONNECTION_STRING</code> in Azure Application Settings to securely connect to Azure Blob Storage.
+                </p>
+                <p>
+                    <strong>Deployment Source:</strong> Automated deployments from the <code>main</code> branch via GitHub Actions.
+                </p>
+                <p>
+                    <strong>Outcome:</strong>
+                    The project resulted in a fully functional cloud application that allows users to upload files directly to Azure Blob Storage. The deployment is live, demonstrating a secure and scalable solution for file uploads.
+                </p>
+            </li>
+        </ul>
     </main>
     <footer>
         <p>&copy; 2024 Oliver Roy. All rights reserved.</p>
