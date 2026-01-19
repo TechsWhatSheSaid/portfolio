@@ -374,6 +374,7 @@ nav a:hover {
         font-size: 1rem;
         border-radius: 12px;
     }
+   
    nav ul {
     display: flex;
     flex-direction: column;
