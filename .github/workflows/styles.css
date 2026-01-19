@@ -318,38 +318,17 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    nav a {
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-        font-size: 1em;
-        border-radius: 10px;
-    }
-}
-
-/* Hide hamburger on desktop */
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-}
-
-/* Mobile layout */
-@media (max-width: 600px) {
-
     .header-content {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: 10px;
     }
 
     nav {
@@ -365,13 +344,6 @@ nav a:hover {
 
     nav.show {
         display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-        margin-left: auto;
-        margin-right: 20px;
-        margin-top: 10px;
     }
 
     nav ul {
@@ -398,6 +370,15 @@ nav a:hover {
         font-size: 1rem;
         border-radius: 12px;
     }
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
 }
 
 .header-content {
