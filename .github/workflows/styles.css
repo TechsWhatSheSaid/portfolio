@@ -62,7 +62,7 @@ header {
 }
 
 .site-heading {
-    color: black; /* Changed from white */
+    color: #2A2A2A; /* Changed from white */
     font-size: 1.8em;
     margin: 0;
 }
