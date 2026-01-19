@@ -67,21 +67,6 @@ header {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: black; /* Changed from white */
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: opacity 0.3s ease;
-}
-
 nav a:hover {
     opacity: 0.7;
 }
