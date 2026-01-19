@@ -396,4 +396,28 @@ nav a:hover {
         align-items: center;
         gap: 12px;
     }
+
+   /* Fix header spacing */
+header {
+    padding-left: 0;
+    padding-right: 0;
 }
+
+.header-content {
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Fix footer spacing */
+footer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact-info {
+    width: 100%;
+    justify-content: center;
+}
+   
+}
+
