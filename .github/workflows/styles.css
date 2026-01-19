@@ -319,10 +319,14 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
+
+    /* Header */
     .header-content {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        max-width: 100%;
+        padding: 10px;
     }
 
     .nav-toggle {
@@ -358,7 +362,6 @@ nav a:hover {
     }
 
     nav li {
-        list-style: none;
         width: 100%;
         max-width: 300px;
     }
@@ -371,13 +374,26 @@ nav a:hover {
         font-size: 1rem;
         border-radius: 12px;
     }
-}
 
-@media (max-width: 600px) {
+    /* Main Layout */
     main {
         width: 100%;
         max-width: 100%;
         margin: 0;
         border-radius: 0;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 }
