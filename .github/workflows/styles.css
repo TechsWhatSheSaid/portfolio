@@ -332,3 +332,46 @@ nav a:hover {
         border-radius: 10px;
     }
 }
+
+/* Hide hamburger on desktop */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 15px 0;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+}
