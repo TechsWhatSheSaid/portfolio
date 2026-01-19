@@ -383,7 +383,8 @@ nav a:hover {
     margin: 0;
     width: 100%;
     align-items: center;
-}
+      
+    }
 
    nav li {
     list-style: none;
