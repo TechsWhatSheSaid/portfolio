@@ -418,6 +418,18 @@ footer {
     width: 100%;
     justify-content: center;
 }
-   
+
+   /* Remove all horizontal padding/margins that cause space */
+header,
+footer,
+main,
+.header-content,
+.contact-info {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}   
+
 }
 
