@@ -358,21 +358,25 @@ nav a:hover {
         padding: 0;
     }
 
-    /* Mobile nav */
-    nav {
-        display: none;
-        flex-direction: column;
-        gap: 12px;
-        background-color: rgba(0, 0, 0, 0.85);
-        padding: 15px 0;
-        border-radius: 12px;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    nav.show {
-        display: flex;
-    }
+   /* Mobile nav animation — slide down */
+   nav {
+       max-height: 0;
+       overflow: hidden;
+       transition: max-height 0.35s ease;
+       display: flex;
+       flex-direction: column;
+       gap: 12px;
+       background-color: rgba(0, 0, 0, 0.85);
+       padding: 0; /* padding removed while collapsed */
+       border-radius: 12px;
+       margin-top: 10px;
+       width: 100%;
+   }
+   
+   nav.show {
+       max-height: 500px; /* enough room for all links */
+       padding: 15px 0;   /* padding fades in with the slide */
+   }
 
     nav ul {
         display: flex;
