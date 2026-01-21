@@ -346,6 +346,7 @@ nav a:hover {
     width: 100%;
     max-width: 100%;
     margin: 0;
+    position: relative;
     }
 
     .nav-toggle {
@@ -358,24 +359,26 @@ nav a:hover {
         padding: 0;
     }
 
-   /* Mobile nav animation — slide down */
-   nav {
+    nav {
+       position: absolute;
+       top: 100%;
+       right: 0;
+       left: 0;
+       z-index: 1000;
        max-height: 0;
        overflow: hidden;
        transition: max-height 0.35s ease;
-       display: flex;
        flex-direction: column;
        gap: 12px;
        background-color: rgba(0, 0, 0, 0.85);
-       padding: 0; /* padding removed while collapsed */
-       border-radius: 12px;
-       margin-top: 10px;
+       padding: 0;
+       border-radius: 0 0 12px 12px;
        width: 100%;
    }
    
    nav.show {
-       max-height: 500px; /* enough room for all links */
-       padding: 15px 0;   /* padding fades in with the slide */
+       max-height: 500px;
+       padding: 15px 0;
    }
 
     nav ul {
