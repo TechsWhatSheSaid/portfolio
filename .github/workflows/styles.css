@@ -337,14 +337,15 @@ nav a:hover {
 
     /* Header layout + hamburger placement */
     .header-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 100%;
-        padding: 10px 15px;
-        margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px; /* controls spacing between heading and hamburger */
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     }
 
     .nav-toggle {
