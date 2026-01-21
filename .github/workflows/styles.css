@@ -320,22 +320,44 @@ nav a:hover {
 
 @media (max-width: 600px) {
 
-    /* Header */
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Reset global spacing */
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header, main, footer {
+        margin: 0;
+        padding: 0;
         width: 100%;
         max-width: 100%;
-        padding: 10px;
+    }
+
+    /* Header layout + hamburger placement */
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 15px;
+        margin: 0;
     }
 
     .nav-toggle {
         display: block;
-        margin-left: auto;
-        margin-right: 20px;
-        margin-top: 10px;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
     }
 
+    /* Mobile nav */
     nav {
         display: none;
         flex-direction: column;
@@ -375,7 +397,7 @@ nav a:hover {
         border-radius: 12px;
     }
 
-    /* Main Layout */
+    /* Main */
     main {
         width: 100%;
         max-width: 100%;
@@ -384,74 +406,13 @@ nav a:hover {
     }
 
     /* Footer */
-    footer {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
     .contact-info {
         flex-direction: column;
         align-items: center;
         gap: 12px;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        justify-content: center;
     }
-
-   /* Fix header spacing */
-header {
-    padding-left: 0;
-    padding-right: 0;
 }
-
-.header-content {
-    margin: 0;
-    padding: 0 10px;
-}
-
-/* Fix footer spacing */
-footer {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.contact-info {
-    width: 100%;
-    justify-content: center;
-}
-
-   /* Remove all horizontal padding/margins that cause space */
-header,
-footer,
-main,
-.header-content,
-.contact-info {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}   
-
-/* Header layout + hamburger placement */
-.header-content {
-    display: flex;
-    flex-direction: row;        /* keep heading + hamburger on same line */
-    justify-content: space-between;
-    align-items: center;        /* vertically center both */
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 15px;
-    margin: 0;
-}
-
-.nav-toggle {
-    display: block;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0;                  /* remove drifting */
-    padding: 0;                 /* tighten hitbox */
-}
-   
-}
-
