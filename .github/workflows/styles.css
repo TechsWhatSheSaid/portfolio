@@ -339,16 +339,16 @@ nav a:hover {
 
     /* Header layout + hamburger placement */
     .header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px; /* controls spacing between heading and hamburger */
-    padding: 10px 15px;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px; /* controls spacing between heading and hamburger */
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        position: relative;
     }
 
     .nav-toggle {
@@ -362,26 +362,32 @@ nav a:hover {
     }
 
     nav {
-       position: absolute;
-       top: 100%;
-       right: 0;
-       left: 0;
-       z-index: 1000;
-       max-height: 0;
-       overflow: hidden;
-       transition: max-height 0.35s ease;
-       flex-direction: column;
-       gap: 12px;
-       background-color: rgba(0, 0, 0, 0.85);
-       padding: 0;
-       border-radius: 0 0 12px 12px;
-       width: 100%;
-   }
-   
-   nav.show {
-       max-height: 500px;
-       padding: 15px 0;
-   }
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        flex-direction: column;
+        gap: 12px;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 0;
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+
+        /* 🔥 Fix: prevent nav from blocking clicks when hidden */
+        pointer-events: none;
+    }
+
+    nav.show {
+        max-height: 500px;
+        padding: 15px 0;
+
+        /* 🔥 Re-enable interaction when menu is open */
+        pointer-events: auto;
+    }
 
     nav ul {
         display: flex;
