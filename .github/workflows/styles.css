@@ -426,11 +426,3 @@ nav a:hover {
         justify-content: center;
     }
 }
-
-nav {
-    pointer-events: none;
-}
-
-nav.show {
-    pointer-events: auto;
-}
