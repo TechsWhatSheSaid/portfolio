@@ -115,6 +115,7 @@ nav a:hover {
 
 .project-card {
     background-color: #ffffff;
+    color: #000000; /* 🔥 Add this line to fix text color */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
