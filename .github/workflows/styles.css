@@ -109,7 +109,8 @@ nav a:hover {
     align-items: center;
     gap: 40px;
     margin-top: 40px;
-   bacground-color: #ffffff;
+    background-color: #ffffff; /* fixed typo + ensures uniform backdrop */
+    width: 100%;
 }
 
 .project-card {
@@ -123,6 +124,7 @@ nav a:hover {
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    flex-shrink: 0; /* prevents card compression when more are added */
 }
 
 .project-card:hover {
@@ -131,9 +133,11 @@ nav a:hover {
 }
 
 .project-card iframe {
+    display: block;
     width: 100%;
     max-width: 640px;
     height: 360px;
+    min-height: 360px; /* prevents collapse */
     border-radius: 10px;
     border: none;
     margin-top: 15px;
@@ -145,7 +149,7 @@ nav a:hover {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: rgba(51, 51, 51, 0.85);
-    color: white; 
+    color: white;
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
@@ -156,7 +160,6 @@ nav a:hover {
     background-color: rgba(51, 51, 51, 1);
     transform: translateY(-2px);
 }
-
 /* --------------------------------------------------
    CERTIFICATIONS PAGE
 -------------------------------------------------- */
