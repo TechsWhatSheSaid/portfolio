@@ -109,6 +109,7 @@ nav a:hover {
     align-items: center;
     gap: 40px;
     margin-top: 40px;
+   bacground-color: #ffffff;
 }
 
 .project-card {
