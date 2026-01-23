@@ -109,12 +109,12 @@ nav a:hover {
     align-items: center;
     gap: 40px;
     margin-top: 40px;
-    background-color: #ffffff; /* fixed typo + ensures uniform backdrop */
+    background-color: #ffffff;
     width: 100%;
 }
 
 .project-card {
-    background-color: #ffffff; /* fully opaque, consistent everywhere */
+    background-color: #ffffff;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -124,7 +124,6 @@ nav a:hover {
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-    flex-shrink: 0; /* prevents card compression when more are added */
 }
 
 .project-card:hover {
@@ -426,4 +425,12 @@ nav a:hover {
         padding: 0 10px;
         justify-content: center;
     }
+}
+
+nav {
+    pointer-events: none;
+}
+
+nav.show {
+    pointer-events: auto;
 }
